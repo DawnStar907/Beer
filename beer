@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ART="/usr/share/beer/mug.txt"
+
+if [[ ${EUID:-$(id -u)} -ne 0 ]]; then
+  echo "No, fuck you."
+  exit 1
+fi
+
+cat "$ART"
