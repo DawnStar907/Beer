@@ -1,4 +1,4 @@
-# beer
+# Beer
 
 Prints "No, fuck you." unless run with sudo; with sudo it prints a mug logo.
 
