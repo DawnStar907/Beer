@@ -1,10 +1,21 @@
-# Beer
+# Beer v1.0.4 🍺
+![cheers](https://media.tenor.com/EcUEfGy--MQAAAAM/getcampedonnerd.gif)
+![cheers](https://media.tenor.com/EcUEfGy--MQAAAAM/getcampedonnerd.gif)
 
-Prints "No, fuck you." unless run with sudo; with sudo it prints a mug logo.
+This provides the Arch Linux package for **Beer** — a command that refuses to serve non-root users, but prints some *root* beer when run with `sudo`.
 
-## Build (Arch)
+## Installation
+
+### Prebuilt
+[![GitHub release](https://img.shields.io/github/v/release/DawnStar907/Beer?sort=semver)](https://github.com/DawnStar907/Beer/releases/latest)
+
+Download the latest `.pkg.tar.zst` asset from the release page, then install it:
+```bash
+sudo pacman -U beer-1.0.4-1-any.pkg.tar.zst
+```
+### From Source
 ```bash
 git clone https://github.com/DawnStar907/Beer.git
 cd Beer
-chmod +x Beer
 makepkg -si
+```
