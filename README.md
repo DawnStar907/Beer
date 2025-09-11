@@ -1,4 +1,4 @@
-# Beer v1.0.4 🍺
+# Beer v2.0.1 🍺
 ![cheers](https://media.tenor.com/EcUEfGy--MQAAAAM/getcampedonnerd.gif)
 ![cheers](https://media.tenor.com/EcUEfGy--MQAAAAM/getcampedonnerd.gif)
 
