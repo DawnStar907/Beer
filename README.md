@@ -11,7 +11,7 @@ This provides the Arch Linux package for **Beer** — a command that refuses to 
 
 Download the latest `.pkg.tar.zst` from the release page, then install it using:
 ```bash
-sudo pacman -U beer-1.0.4-1-any.pkg.tar.zst
+sudo pacman -U  beer-2.0.1-1-any.pkg.tar.zst 
 ```
 ### From Source
 ```bash
