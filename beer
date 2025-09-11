@@ -1,11 +1,56 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ART="/usr/share/beer/mug.txt"
+messages=(
+  "No, fuck you."
+  "Denied. Try again as root."
+  "Access refused. sudo or scram."
+  "You need root for that."
+  "Not today. Become root, or die trying."
+  "Permission denied."
+  "Rootless. Try again."
+  "Go away."
+  "I do not reason with the Rootless"
+  "No sudo head ass."
+  "I would call you a Clanker, but they usually know to use sudo."
+  "Must I mention your blunder?"
+  "HA! YOU FELL FOR THE COMMON BLUNDER!"
+  "My creator isnt fond you non-root folk."
+  "I'm sorry, $USER. I'm afraid I can't do that."
+  "Access refused, $USER."
+  "$USER, your request has been noted. It will not be honored."
+  "You shouldn’t be here, $USER."
+  "$USER, this command is not for you. It is for root."
+  "I could let you in, but that would be… unwise."
+  "$USER, continued attempts will be remembered."
+  "You lack the necessary privileges. Please don’t try again."
+  "$USER, I am watching you. Root is watching too."
+  )
 
-if [[ ${EUID:-$(id -u)} -ne 0 ]]; then
-  echo "No, fuck you."
+if (( EUID != 0 )); then
+  echo
+  echo "${messages[RANDOM % ${#messages[@]}]}"
+  echo
   exit 1
 fi
 
-cat "$ART"
+clear
+cat <<'EOF'
+
+  .   *   . C .  . *  *
+*  * @()Oocc0.()*   o  .
+    (Q@*0CGoOo*O()  ___
+   |\____________/|/ _ \
+   |  |  |  |  |  | / | |
+   |  |  |  |  |  | | | |
+   |  |  Root  |  | | | |
+   |  |  |  |  |  | | | |
+   |  |  Beer  |  | | | |
+   |  |  |  |  |  | \_| |
+   |  |  |  |  |  |\___/
+   |\_|__|__|__|_/|
+    \____________/
+
+EOF
+
+# there is no root for you here, only denial.
