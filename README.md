@@ -9,7 +9,7 @@
 ## Installation
 
 ### Prebuilt
-[![GitHub release](https://img.shields.io/github/v/release/DawnStar907/Beer?sort=semver)](https://github.com/DawnStar907/Beer/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/M0KA907/Beer?sort=semver)](https://github.com/M0KA907/Beer/releases/latest)
 
 Download the latest `.pkg.tar.zst` from the release page, then install it using:
 ```bash
