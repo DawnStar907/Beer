@@ -17,7 +17,7 @@ sudo pacman -U  beer-2.0.1-1-any.pkg.tar.zst
 ```
 ### From Source
 ```bash
-git clone https://github.com/DawnStar907/Beer.git
+git clone https://github.com/M0KA907/Beer.git
 cd Beer
 makepkg -si
 ```
